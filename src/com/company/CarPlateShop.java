@@ -6,8 +6,7 @@ public class CarPlateShop {
 
     public CarPlateShop() {
     }
-
-
+    
     public Double calculatePrice(String carNumber) {
         if (illegalArgument(carNumber)) {
             throw new IllegalArgumentException("Incorrect plate number format.");
@@ -33,7 +32,7 @@ public class CarPlateShop {
 
 
     public static boolean illegalArgument(String carNumber) {
-        return carNumber == null || carNumber.trim().length() < 1 || carNumber.length() > 6 ;
+        return carNumber == null || carNumber.trim().length() < 1 || carNumber.length() > 6;
     }
 
     public static boolean firstThreeSymbolsEqual(String carNumber) {

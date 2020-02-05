@@ -14,9 +14,7 @@ public class CarPlateShopTest {
         this.shop = new CarPlateShop();
     }
 
-    //    @Test
-//    public void
-    @Test (expected = IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testIllegalInput() {
         assertThat(shop.calculatePrice(null), is(equalTo(new IllegalArgumentException())));
         assertThat(shop.calculatePrice("3242342424234"), is(equalTo(new IllegalArgumentException())));
